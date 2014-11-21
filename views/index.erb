@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head><title>Grocery List</title></head>
+
+<body>
+	<h1>List of Grocerys to Get So I Don't Starve</h1>
+	<ul>
+			<% @list.each do |food_item| %>
+			<li><%= food_item %></li>
+			<% end %>
+	</ul>
+
+	<div>
+		<h4>Add an item:</h4>
+		<form method="post" action"/GET/groceries">
+			<div>
+				<label for="new_item">Item to be added:</label>
+				<input type="text" id="new_item" placeholder="mmmm food" name="GET[item]" value=<%= @item_to_add %>>
+			</div>
+			<div>
+				<input type="submit" value="delicious">
+			</div>
+
+
+			</div>
+	</div>
+
+
+
+</body>
